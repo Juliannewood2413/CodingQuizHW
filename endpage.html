@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finished!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+ <div class="container">
+     <div id="end" class= "flex-center flex-column">
+         <h1>Your Score</h1>
+         <h1 id="finalscore"></h1>
+         <form>
+             <input type="text" name="username" id="username" placeholder="Enter Initials"/>
+             <button 
+             type= "submit" 
+             class="btn"
+             onclick="saveInfoScore(event)"
+             diabled
+             >
+             Enter your initials to save your high score!</button>
+             <a class ="btn" href="index.html">Start Over</a>
+            
+            </form>
+            
+     </div>
+ </div>
+
+ <div class="container">
+     <div id="highScores" class="flex-center flex-column">
+         <h2 id="finalscore">High Scores</h2>
+         <ul id="hSList"></ul>
+     </div>
+ </div>
+   
+
+<script src = "endquiz.js"></script>
+
+</body>
+</html>
