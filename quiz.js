@@ -122,14 +122,12 @@ var quizQuestions = [
 
  function getNextQuestion (lastChoice) {
    console.log(lastChoice);
-
-   
  
    if(lastChoice == "answer match"){
      console.log("quiz has begun")
    }else if(lastChoice == quizQuestions[qCounter-1].answer){
-     console.log("correct")
      score +=10;
+     console.log(score);
    }else {
      console.log("incorrect")
     timeleft -= 15;

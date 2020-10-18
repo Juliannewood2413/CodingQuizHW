@@ -37,6 +37,6 @@ saveInfoScore = (e) => {
   let retrievedScores = JSON.parse(window.localStorage.getItem('hSList'))
 
   for(i = 0; i < 5; i++){
-    hsTable.innerHTML += '<tr><td>' + retrievedScores[i].username + '</td><td>' + retrievedScores[i].score + '</td></tr>';
+    hsTable.innerHTML += '<tr><td>' + retrievedScores[i].name + '</td><td>' + retrievedScores[i].score + '</td></tr>';
   }
 }
