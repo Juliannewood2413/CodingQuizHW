@@ -172,27 +172,8 @@ var quizQuestions = [
       timeleft -= 1;
     }, 1000);
 
-    // localStorage.getItem("highScore");
   }
 
 
-   
-
-// function unhide(btn, quiz) {
-//   var hideQ = document.getElementById(quiz);
-//   if (hideQ) {
-//       if(hideQ.container=='hidden'){
-//           hideQ.container = 'unhidden' ;
-//           clickedButton.value = 'hide';
-//       }else {
-//           hideQ.container = 'hidden';
-//           clickedButton.value = 'unhide'
-//       }
-//   }}
-
-var highScore = localStorage.getItem("highScore");
-  if (highScore  || score > parseInt(highScore)) {
-  localStorage.setItem("highscore", score);
-}
 
 
